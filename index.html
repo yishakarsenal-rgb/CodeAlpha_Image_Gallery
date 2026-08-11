@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeAlpha - Responsive Image Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Interactive Image Gallery</h1>
+      <!-- Category Filter Buttons (Bonus Feature) -->
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="nature">Nature</button>
+        <button class="filter-btn" data-category="tech">Tech</button>
+        <button class="filter-btn" data-category="city">City</button>
+      </div>
+    </header>
+
+    <!-- Image Gallery Grid -->
+    <main class="gallery-container">
+      <div class="gallery-item" data-category="nature">
+        <img
+          src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800"
+          alt="Beautiful Landscape"
+        />
+      </div>
+      <div class="gallery-item" data-category="tech">
+        <img
+          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800"
+          alt="Code on Laptop"
+        />
+      </div>
+      <div class="gallery-item" data-category="city">
+        <img
+          src="https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800"
+          alt="City Street"
+        />
+      </div>
+      <div class="gallery-item" data-category="nature">
+        <img
+          src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800"
+          alt="Mountain View"
+        />
+      </div>
+      <div class="gallery-item" data-category="tech">
+        <img
+          src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800"
+          alt="Cyber Security Setup"
+        />
+      </div>
+      <div class="gallery-item" data-category="city">
+        <img
+          src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800"
+          alt="Night City Skyline"
+        />
+      </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+      <span class="close-btn">&times;</span>
+      <button class="nav-btn prev-btn">&#10094;</button>
+      <img class="lightbox-img" src="" alt="Enlarged View" />
+      <button class="nav-btn next-btn">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
