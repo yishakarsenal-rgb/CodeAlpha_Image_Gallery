@@ -9,33 +9,24 @@
   <body>
     <header>
       <h1>Interactive Image Gallery</h1>
-      <!-- Category Filter Buttons (Bonus Feature) -->
+      <!-- Expanded Category Filter Buttons -->
       <div class="filter-buttons">
         <button class="filter-btn active" data-category="all">All</button>
         <button class="filter-btn" data-category="nature">Nature</button>
         <button class="filter-btn" data-category="tech">Tech</button>
         <button class="filter-btn" data-category="city">City</button>
+        <button class="filter-btn" data-category="animals">Animals</button>
+        <button class="filter-btn" data-category="food">Food</button>
       </div>
     </header>
 
-    <!-- Image Gallery Grid -->
+    <!-- Expanded Gallery Grid -->
     <main class="gallery-container">
+      <!-- Nature -->
       <div class="gallery-item" data-category="nature">
         <img
           src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800"
           alt="Beautiful Landscape"
-        />
-      </div>
-      <div class="gallery-item" data-category="tech">
-        <img
-          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800"
-          alt="Code on Laptop"
-        />
-      </div>
-      <div class="gallery-item" data-category="city">
-        <img
-          src="https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800"
-          alt="City Street"
         />
       </div>
       <div class="gallery-item" data-category="nature">
@@ -44,16 +35,74 @@
           alt="Mountain View"
         />
       </div>
+
+      <!-- Tech -->
+      <div class="gallery-item" data-category="tech">
+        <img
+          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800"
+          alt="Code on Laptop"
+        />
+      </div>
       <div class="gallery-item" data-category="tech">
         <img
           src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800"
           alt="Cyber Security Setup"
         />
       </div>
+
+      <!-- City -->
+      <div class="gallery-item" data-category="city">
+        <img
+          src="https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800"
+          alt="City Street"
+        />
+      </div>
       <div class="gallery-item" data-category="city">
         <img
           src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800"
           alt="Night City Skyline"
+        />
+      </div>
+
+      <!-- Animals -->
+      <div class="gallery-item" data-category="animals">
+        <img
+          src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=800"
+          alt="Majestic Lion"
+        />
+      </div>
+      <div class="gallery-item" data-category="animals">
+        <img
+          src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?w=800"
+          alt="Cute Dog"
+        />
+      </div>
+
+      <!-- Food -->
+      <div class="gallery-item" data-category="food">
+        <img
+          src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800"
+          alt="Delicious Gourmet Dish"
+        />
+      </div>
+      <div class="gallery-item" data-category="food">
+        <img
+          src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800"
+          alt="Fresh Pizza"
+        />
+      </div>
+
+      <!-- Additional Mix -->
+      <div class="gallery-item" data-category="nature">
+        <img
+          src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800"
+          alt="Forest Pathway"
+        />
+      </div>
+      <div class="gallery-item" data-category="animals">
+        <img
+          src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=800"
+          alt="Cat Closeup"
         />
       </div>
     </main>
