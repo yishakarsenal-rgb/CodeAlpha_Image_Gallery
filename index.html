@@ -9,7 +9,7 @@
   <body>
     <header>
       <h1>Interactive Image Gallery</h1>
-      <!-- Expanded Category Filter Buttons -->
+      <!-- Filter Buttons -->
       <div class="filter-buttons">
         <button class="filter-btn active" data-category="all">All</button>
         <button class="filter-btn" data-category="nature">Nature</button>
@@ -17,19 +17,21 @@
         <button class="filter-btn" data-category="city">City</button>
         <button class="filter-btn" data-category="animals">Animals</button>
         <button class="filter-btn" data-category="food">Food</button>
+        <button class="filter-btn" data-category="cars">Cars</button>
+        <button class="filter-btn" data-category="sports">Sports</button>
+        <button class="filter-btn" data-category="clothing">Clothing</button>
       </div>
     </header>
 
     <!-- Expanded Gallery Grid -->
     <main class="gallery-container">
       <!-- Nature -->
-      <div class="gallery-item" data-category="nature">
-        <img
-          src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800"
-          alt="Beautiful Landscape"
-        />
-      </div>
-      <div class="gallery-item" data-category="nature">
+      <div
+        class="gallery-item"
+        data-category="nature"
+        data-title="Mountain View"
+        data-description="Serene snow-capped peaks rising above a quiet pine valley."
+      >
         <img
           src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800"
           alt="Mountain View"
@@ -37,27 +39,25 @@
       </div>
 
       <!-- Tech -->
-      <div class="gallery-item" data-category="tech">
+      <div
+        class="gallery-item"
+        data-category="tech"
+        data-title="Developer Workspace"
+        data-description="Modern workstation optimized for modern full-stack engineering."
+      >
         <img
           src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800"
           alt="Code on Laptop"
         />
       </div>
-      <div class="gallery-item" data-category="tech">
-        <img
-          src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800"
-          alt="Cyber Security Setup"
-        />
-      </div>
 
       <!-- City -->
-      <div class="gallery-item" data-category="city">
-        <img
-          src="https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800"
-          alt="City Street"
-        />
-      </div>
-      <div class="gallery-item" data-category="city">
+      <div
+        class="gallery-item"
+        data-category="city"
+        data-title="Night Skyline"
+        data-description="Vibrant urban metropolis illuminated against the night sky."
+      >
         <img
           src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800"
           alt="Night City Skyline"
@@ -65,53 +65,115 @@
       </div>
 
       <!-- Animals -->
-      <div class="gallery-item" data-category="animals">
+      <div
+        class="gallery-item"
+        data-category="animals"
+        data-title="Majestic Lion"
+        data-description="A powerful lion resting gracefully in the golden savanna sunlight."
+      >
         <img
           src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=800"
           alt="Majestic Lion"
         />
       </div>
-      <div class="gallery-item" data-category="animals">
-        <img
-          src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?w=800"
-          alt="Cute Dog"
-        />
-      </div>
 
       <!-- Food -->
-      <div class="gallery-item" data-category="food">
-        <img
-          src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800"
-          alt="Delicious Gourmet Dish"
-        />
-      </div>
-      <div class="gallery-item" data-category="food">
+      <div
+        class="gallery-item"
+        data-category="food"
+        data-title="Fresh Gourmet Pizza"
+        data-description="Artisanal wood-fired pizza topped with fresh basil and mozzarella."
+      >
         <img
           src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800"
           alt="Fresh Pizza"
         />
       </div>
 
-      <!-- Additional Mix -->
-      <div class="gallery-item" data-category="nature">
+      <!-- Cars -->
+      <div
+        class="gallery-item"
+        data-category="cars"
+        data-title="Sports Supercar"
+        data-description="High-performance modern luxury sports car engineered for speed."
+      >
         <img
-          src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800"
-          alt="Forest Pathway"
+          src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800"
+          alt="Sports Supercar"
         />
       </div>
-      <div class="gallery-item" data-category="animals">
+      <div
+        class="gallery-item"
+        data-category="cars"
+        data-title="Classic Vintage Automobile"
+        data-description="Timeless vintage car preserved in pristine original condition."
+      >
         <img
-          src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=800"
-          alt="Cat Closeup"
+          src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800"
+          alt="Vintage Car"
+        />
+      </div>
+
+      <!-- Sports -->
+      <div
+        class="gallery-item"
+        data-category="sports"
+        data-title="Basketball Action"
+        data-description="Intense athletic moment during a competitive evening basketball game."
+      >
+        <img
+          src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800"
+          alt="Basketball Game"
+        />
+      </div>
+      <div
+        class="gallery-item"
+        data-category="sports"
+        data-title="Morning Runner"
+        data-description="An athlete maintaining discipline during an early morning trail run."
+      >
+        <img
+          src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800"
+          alt="Runner Track"
+        />
+      </div>
+
+      <!-- Clothing -->
+      <div
+        class="gallery-item"
+        data-category="clothing"
+        data-title="Streetwear Fashion"
+        data-description="Modern minimal streetwear apparel displayed in an urban setting."
+      >
+        <img
+          src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=800"
+          alt="Streetwear Apparel"
+        />
+      </div>
+      <div
+        class="gallery-item"
+        data-category="clothing"
+        data-title="Denim Jacket Collection"
+        data-description="Classic casual denim apparel styled for daily wear."
+      >
+        <img
+          src="https://images.unsplash.com/photo-1543087903-1ac2ec7aa8c5?w=800"
+          alt="Denim Jacket"
         />
       </div>
     </main>
 
-    <!-- Lightbox Modal -->
+    <!-- Enhanced Lightbox Modal -->
     <div id="lightbox" class="lightbox">
       <span class="close-btn">&times;</span>
       <button class="nav-btn prev-btn">&#10094;</button>
-      <img class="lightbox-img" src="" alt="Enlarged View" />
+      <div class="lightbox-content">
+        <img class="lightbox-img" src="" alt="Enlarged View" />
+        <div class="lightbox-caption">
+          <h3 id="caption-title"></h3>
+          <p id="caption-description"></p>
+        </div>
+      </div>
       <button class="nav-btn next-btn">&#10095;</button>
     </div>
 
