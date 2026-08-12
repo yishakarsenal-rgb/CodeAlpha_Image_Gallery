@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Navigation Logic
+  // Navigation Controls
   function showImage(index) {
     if (index < 0) {
       currentIndex = visibleImages.length - 1;
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Category Filter
+  // Filter Categories
   filterBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       filterBtns.forEach((b) => b.classList.remove("active"));
