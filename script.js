@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const filterBtns = document.querySelectorAll(".filter-btn");
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.querySelector(".lightbox-img");
+  const captionTitle = document.getElementById("caption-title");
+  const captionDesc = document.getElementById("caption-description");
   const closeBtn = document.querySelector(".close-btn");
   const prevBtn = document.querySelector(".prev-btn");
   const nextBtn = document.querySelector(".next-btn");
@@ -16,13 +18,22 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   }
 
+  function updateLightboxData(item) {
+    const imgSrc = item.querySelector("img").src;
+    const title = item.getAttribute("data-title") || "Gallery Image";
+    const description = item.getAttribute("data-description") || "";
+
+    lightboxImg.src = imgSrc;
+    captionTitle.textContent = title;
+    captionDesc.textContent = description;
+  }
+
   // Open Lightbox
   galleryItems.forEach((item) => {
     item.addEventListener("click", () => {
       updateVisibleImages();
       currentIndex = visibleImages.indexOf(item);
-      const imgSrc = item.querySelector("img").src;
-      lightboxImg.src = imgSrc;
+      updateLightboxData(item);
       lightbox.style.display = "flex";
     });
   });
@@ -36,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       currentIndex = index;
     }
-    lightboxImg.src = visibleImages[currentIndex].querySelector("img").src;
+    updateLightboxData(visibleImages[currentIndex]);
   }
 
   prevBtn.addEventListener("click", (e) => {
@@ -60,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Bonus: Filter Functionality
+  // Category Filter
   filterBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       filterBtns.forEach((b) => b.classList.remove("active"));
