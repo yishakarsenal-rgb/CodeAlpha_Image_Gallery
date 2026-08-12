@@ -6,66 +6,74 @@
 }
 
 body {
-  background-color: #f4f6f9;
-  color: #333;
-  padding: 20px;
+  background-color: #0f172a;
+  color: #f8fafc;
+  padding: 25px 15px;
 }
 
 header {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 h1 {
-  margin-bottom: 15px;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #38bdf8;
 }
 
-/* Filter Buttons */
+/* Filter Buttons Styling */
 .filter-buttons {
   display: flex;
   justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .filter-btn {
-  padding: 8px 18px;
-  border: none;
-  background-color: #fff;
-  border-radius: 20px;
+  padding: 10px 20px;
+  border: 1px solid #334155;
+  background-color: #1e293b;
+  color: #94a3b8;
+  border-radius: 25px;
   cursor: pointer;
   font-weight: 600;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 
 .filter-btn:hover,
 .filter-btn.active {
-  background-color: #2563eb;
-  color: #fff;
+  background-color: #0284c7;
+  color: #ffffff;
+  border-color: #38bdf8;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.3);
 }
 
 /* Responsive Grid Layout */
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  max-width: 1100px;
+  gap: 22px;
+  max-width: 1250px;
   margin: 0 auto;
 }
 
-/* Gallery Item & Hover Effects */
+/* Card & Hover Effects */
 .gallery-item {
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  background-color: #1e293b;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+  border: 1px solid #334155;
 }
 
 .gallery-item img {
   width: 100%;
-  height: 250px;
+  height: 260px;
   object-fit: cover;
   display: block;
   transition: transform 0.4s ease;
@@ -75,7 +83,7 @@ h1 {
   transform: scale(1.08);
 }
 
-/* Lightbox Modal */
+/* Modal / Lightbox Styles */
 .lightbox {
   display: none;
   position: fixed;
@@ -83,50 +91,12 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.92);
   justify-content: center;
   align-items: center;
   z-index: 1000;
 }
 
-.lightbox-img {
-  max-width: 85%;
-  max-height: 80vh;
-  border-radius: 8px;
-}
-
-.close-btn {
-  position: absolute;
-  top: 20px;
-  right: 35px;
-  color: #fff;
-  font-size: 40px;
-  cursor: pointer;
-}
-
-.nav-btn {
-  position: absolute;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 40px;
-  cursor: pointer;
-  padding: 10px;
-  user-select: none;
-}
-
-.prev-btn {
-  left: 20px;
-}
-.next-btn {
-  right: 20px;
-}
-
-.nav-btn:hover,
-.close-btn:hover {
-  color: #93c5fd;
-}
-/* Lightbox Layout Adjustments */
 .lightbox-content {
   display: flex;
   flex-direction: column;
@@ -143,21 +113,56 @@ h1 {
 }
 
 .lightbox-caption {
-  background-color: rgba(20, 20, 20, 0.95);
+  background-color: #1e293b;
   color: #ffffff;
   width: 100%;
   padding: 15px 20px;
   text-align: center;
   border-radius: 0 0 8px 8px;
+  border: 1px solid #334155;
+  border-top: none;
 }
 
 .lightbox-caption h3 {
-  margin-bottom: 5px;
-  color: #60a5fa;
-  font-size: 1.2rem;
+  margin-bottom: 6px;
+  color: #38bdf8;
+  font-size: 1.25rem;
 }
 
 .lightbox-caption p {
-  color: #d1d5db;
+  color: #cbd5e1;
   font-size: 0.95rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #ffffff;
+  font-size: 40px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.nav-btn {
+  position: absolute;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+  padding: 15px;
+  user-select: none;
+}
+
+.prev-btn {
+  left: 15px;
+}
+.next-btn {
+  right: 15px;
+}
+
+.nav-btn:hover,
+.close-btn:hover {
+  color: #38bdf8;
 }
