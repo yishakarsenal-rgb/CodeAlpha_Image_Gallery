@@ -1,0 +1,34 @@
+# CodeAlpha_ImageGallery - Interactive Image Gallery
+
+A responsive, interactive image gallery built with HTML, CSS, and Vanilla JavaScript as part of the **CodeAlpha Frontend Development Internship**.
+
+---
+
+## 🚀 Features
+
+- **Multi-Category Filtering:** Filter gallery items across 8 categories (Nature, Tech, City, Animals, Food, Cars, Sports, and Clothing)[cite: 2].
+- **Lightbox Modal View:** Click any image to trigger an enlarged modal pop-up display[cite: 2].
+- **Title & Description Overlays:** Displays detailed captions and titles inside the lightbox for every image.
+- **Modal Navigation:** Next and previous controls (`<`, `>`) to browse through images in the active category[cite: 2].
+- **Responsive Layout:** Grid system that auto-adjusts seamlessly across mobile, tablet, and desktop screens[cite: 2].
+- **Dark Theme:** Sleek pure black-and-white UI styling.
+
+---
+
+## 🛠️ Tech Stack
+
+- **HTML5:** Semantic grid structure and data attributes[cite: 2]
+- **CSS3:** Custom styles, grid layout, transitions, and lightbox modal overlay[cite: 2]
+- **JavaScript (ES6+):** Dynamic category filtering, DOM manipulation, and lightbox modal navigation[cite: 2]
+
+---
+
+## 📂 Project Structure
+
+```text
+CodeAlpha_ImageGallery/
+│
+├── index.html    # Gallery grid structure & data attributes
+├── style.css     # Responsive grid & black theme styles
+└── script.js    # Category filter logic & lightbox navigation
+```
