@@ -18,7 +18,7 @@ A responsive, interactive image gallery built with HTML, CSS, and Vanilla JavaSc
 # Tech Stack
 
 - HTML5: Semantic grid structure and data attributes
-- **CSS3:** Custom styles, grid layout, transitions, and lightbox modal overlay[cite: 2]
+- CSS3: Custom styles, grid layout, transitions, and lightbox modal overlay
 - **JavaScript (ES6+):** Dynamic category filtering, DOM manipulation, and lightbox modal navigation[cite: 2]
 
 ---
