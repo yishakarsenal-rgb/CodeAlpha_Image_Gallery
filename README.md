@@ -11,7 +11,7 @@ A responsive, interactive image gallery built with HTML, CSS, and Vanilla JavaSc
 - Title & Description Overlays: Displays detailed captions and titles inside the lightbox for every image.
 - Modal Navigation: Next and previous controls (`<`, `>`) to browse through images in the active category.
 - Responsive Layout: Grid system that auto-adjusts seamlessly across mobile, tablet, and desktop screens.
-- **Dark Theme:** Sleek pure black-and-white UI styling.
+- Dark Theme: Sleek pure black-and-white UI styling.
 
 ---
 
