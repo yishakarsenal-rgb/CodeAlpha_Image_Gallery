@@ -6,7 +6,7 @@ A responsive, interactive image gallery built with HTML, CSS, and Vanilla JavaSc
 
 # Features
 
-- **Multi-Category Filtering:** Filter gallery items across 8 categories (Nature, Tech, City, Animals, Food, Cars, Sports, and Clothing)[cite: 2].
+- Multi-Category Filtering: Filter gallery items across 8 categories (Nature, Tech, City, Animals, Food, Cars, Sports, and Clothing).
 - **Lightbox Modal View:** Click any image to trigger an enlarged modal pop-up display[cite: 2].
 - **Title & Description Overlays:** Displays detailed captions and titles inside the lightbox for every image.
 - **Modal Navigation:** Next and previous controls (`<`, `>`) to browse through images in the active category[cite: 2].
