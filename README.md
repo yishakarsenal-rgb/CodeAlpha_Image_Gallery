@@ -2,8 +2,6 @@
 
 A responsive, interactive image gallery built with HTML, CSS, and Vanilla JavaScript as part of the CodeAlpha Frontend Development Internship.
 
----
-
 # Features
 
 - Multi-Category Filtering: Filter gallery items across 8 categories (Nature, Tech, City, Animals, Food, Cars, Sports, and Clothing).
