@@ -13,8 +13,6 @@ A responsive, interactive image gallery built with HTML, CSS, and Vanilla JavaSc
 - Responsive Layout: Grid system that auto-adjusts seamlessly across mobile, tablet, and desktop screens.
 - Dark Theme: Sleek pure black-and-white UI styling.
 
----
-
 # Tech Stack
 
 - HTML5: Semantic grid structure and data attributes
