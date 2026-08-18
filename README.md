@@ -1,4 +1,4 @@
-# CodeAlpha_ImageGallery - Interactive Image Gallery
+# Interactive Image Gallery
 
 A responsive, interactive image gallery built with HTML, CSS, and Vanilla JavaScript as part of the CodeAlpha Frontend Development Internship.
 
